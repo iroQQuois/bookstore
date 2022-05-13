@@ -1,0 +1,22 @@
+<div class="form__container">
+  <form>
+    <label for="label">Название</label>
+    <input type="text" id="label" name="label"  [(ngModel)]="book.label">
+
+    <label for="genre">Жанр</label>
+    <input type="text" id="genre" name="genre" [(ngModel)]="book.genre">
+
+    <label for="date">Дата написания</label>
+    <input type="text" id="date" name="date" placeholder="Например: 2022-04-29" [(ngModel)]="book.dateOfWriting">
+
+    <label for="desc">Описание</label>
+    <input type="text" id="desc" name="desc" [(ngModel)]="book.description">
+
+    <label for="image">Ссылка на изображение</label>
+    <input type="text" id="image" name="image" [(ngModel)]="book.image">
+    <input type="submit" value="Отправить" (click)="submit(book)">
+    <div *ngIf="done">
+      <div>Успешно обновлено</div>
+    </div>`,
+  </form>
+</div>

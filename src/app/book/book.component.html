@@ -1,0 +1,12 @@
+<h1>{{book.label}}</h1>
+<img class="content__image" src="{{book.image}}"  alt=""/>
+<h4>Жанр: {{book.genre}}</h4>
+<h4>Авторы: </h4>
+<h5 *ngFor="let author of book.authors">
+  {{author.firstName}}
+  {{author.lastName}}
+</h5>
+<h4>Описание: {{book.description}}</h4>
+<h4>Дата написания: {{book.dateOfWriting}}</h4>
+<button routerLink="{{'/book/'+book.id+'/edit'}}" class="button" role="button">Редактировать</button>
+<router-outlet></router-outlet>

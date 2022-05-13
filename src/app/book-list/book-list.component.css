@@ -1,0 +1,43 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+  width: 1200px;
+  margin: auto;
+}
+
+.card {
+  box-shadow: 0 0 5px 0 #0006;
+  border-radius: 10px;
+  padding: 20px;
+  width: 500px;
+}
+
+.card h2, .card p {
+  margin: 0;
+}
+.card h5, h6 {
+  margin-left: 20px;
+}
+
+.card__pic {
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 20px;
+}
+
+.card__text {
+  display: grid;
+  gap: 20px;
+}
+
+.card h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.card h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}

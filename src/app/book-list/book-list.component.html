@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="card" *ngFor="let book of books">
+    <div class="class__text">
+      <img class="card__pic" src="{{book.image}}"  alt=""/>
+      <br>
+      <h1>{{book.label}}</h1>
+      <h2>Авторы:</h2>
+      <h5 *ngFor="let author of book.authors">
+        {{author.firstName}}
+        {{author.lastName}}
+      </h5>
+      <button (click)="goToItem(book)" class="button"><h6>Подробнее</h6></button>
+    </div>
+  </div>
+</div>
